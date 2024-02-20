@@ -1,0 +1,163 @@
+    <!-- out_books.html  -->
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/our_books.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">   
+        <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+        <title>Our Books</title>
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="images/logo.jpeg" alt="Library Logo">
+            </div>
+
+            <div class="navbar-links">
+                <a href="home.html">Home</a>
+                <a href="about_us.html">About Us</a>
+                <a href="our_books.html" >Our Books</a>
+                <a href="our_services.html">Our Services</a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text" id="searchInput" class="search-input" placeholder="Search books...">
+                <a href="cart.html" class="cart-icon" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </div>
+
+        <div id="message-container"></div>
+
+        <div class="container">
+            <h1>Our Books</h1>
+            <div class="card-container" data-book-id="1">
+                <div class="card">
+                    <img src="images/book1.jpg" alt="Book ">
+                    <h3>THE TREE OF LIFE</h3> 
+                    <p>Author: Linda Lennon</p>
+                    <button class="addToCart" data-book-id="1" onclick="addToCart(1, 'THE TREE OF LIFE', 'Linda Lenno', 'book1.jpg')">Add to Cart</button>
+                </div>
+                
+                <div class="card" data-book-id="2">
+                    <img src="images/book2.jpg " alt="Book ">
+                    <h3>NATURE KINGDOM</h3>
+                    <p>Author: Clove Griffith</p>
+                    <button class="addToCart" data-book-id="2" onclick="addToCart(2, 'NATURE KINGDOM', 'Clove Griffith', '../images/book2.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="3">
+                    <img src="images/book3.jpg " alt="Book ">
+                    <h3>REALM OF RUINS</h3>
+                    <p>Author: Hannah West</p>
+                    <button class="addToCart" data-book-id="3" onclick="addToCart(3, 'REALM OF RUINS', 'Hannah West', 'book3.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="4">
+                    <img src="images/book4.jpg " alt="Book ">
+                    <h3>SOMETHING NASTY IN THE WOODS</h3>
+                    <p>Author: Charlie Mortdecal</p>
+                    <button class="addToCart" data-book-id="4" onclick="addToCart(4, 'SOMETHING NASTY IN THE WOODS', 'Charlie Mortdecal', 'book4.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="5">
+                    <img src="images/book5.jpg " alt="Book ">
+                    <h3>SHE SAID THREE SAID</h3>
+                    <p>Author: David B. Lyons</p>
+                    <button class="addToCart" data-book-id="5" onclick="addToCart(5, 'SHE SAID THREE SAID', 'David B. Lyons', 'book5.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="6">
+                    <img src="images/book6.jpg " alt="Book ">
+                    <h3>THE LIVES WE LOST</h3>
+                    <p>Author: Megan Crewe</p>
+                    <button class="addToCart" data-book-id="6" onclick="addToCart(6, 'THE LIVES WE LOST', 'Megan Crewe', 'book6.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="7">
+                    <img src="images/book7.jpg " alt="Book ">
+                    <h3>HANGING HOUSE</h3>
+                    <p>Author: Dean Rasmussen</p>
+                    <button class="addToCart" data-book-id="7" onclick="addToCart(7, 'HANGING HOUSE', 'Dean Rasmussen', 'book7.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="8">
+                    <img src="images/book11.jpg " alt="Book ">
+                    <h3>AWAKE</h3>
+                    <p>Author:Jaison Black </p>
+                    <button class="addToCart" data-book-id="8" onclick="addToCart(8, 'AWAKE', 'Jaison Black', 'book11.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="9">
+                    <img src="images/book9.jpg " alt="Book ">
+                    <h3>THE GREAT SEASON</h3>
+                    <p>Author: Tom Powell</p>
+                    <button class="addToCart" data-book-id="9" onclick="addToCart(9, 'THE GREAT SEASON', 'Tom Powell', 'book9.jpg')">Add to Cart</button>
+                </div>
+            
+                <div class="card" data-book-id="10">
+                    <img src="images/book10.jpg " alt="Book ">
+                    <h3>THE OUTSIDER</h3>
+                    <p>Author: Stephen King</p>
+                    <button class="addToCart" data-book-id="10" onclick="addToCart(10, 'THE OUTSIDER', 'Stephen King', 'book10.jpg')">Add to Cart</button>
+                </div>
+                
+            </div>
+        </div>
+
+        <footer class="footer">
+            <div class="container row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">visit website</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">download</a></li>
+                        <li><a href="#">changelog</a></li>
+                        <li><a href="#">github</a></li>
+                        <li><a href="#">all version</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="our_books.js"></script>
+    </body>
+
+    </html>
+
+
+
+
+
+

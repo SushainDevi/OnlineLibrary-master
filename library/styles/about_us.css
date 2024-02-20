@@ -1,0 +1,315 @@
+/* Reset default margin and padding for HTML and body */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-header {
+    text-align: center;
+    background-color: #333; /* Background color for the header */
+    padding: 10px 0;
+}
+
+.navbar-header h1 {
+    color: #fff; /* Header text color */
+    margin: 0;
+}
+
+.navbar {
+    background-color: rgb(66, 64, 64); 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: absolute; /* Add this to make the navbar overlay the home section */
+    width: 100%; /* Ensure the navbar spans the entire width */
+    top: 0; /* Position the navbar at the top of the viewport */
+    left: 0;
+}
+
+/* Style for the logo */
+.navbar-logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 15px;
+    
+}
+
+/* Style for the logo image */
+.navbar-logo img {
+    max-height: 60px; /* Adjust the max height for your logo */
+    max-width: 100%; /* Ensure the logo width adjusts to the available space */
+    display: block; /* Remove any extra spacing around the logo */
+}
+
+/* Style for the navigation links */
+.navbar-links {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    background-color: black;
+    border-radius: 7px;
+}
+
+/* Style for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    padding-left: 25px;
+    background-image: url('search-26241.png'); /* Replace 'search-icon.png' with your search icon image */
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.cart-icon {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: white    ; /* Icon color */
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.pair {
+    display: flex;
+    flex-direction: column; /* Stack pairs vertically on small screens */
+    padding: 40px;
+    margin-top: 40px;
+    background-color: #000000e5; /* Dark background color */
+}
+
+.text {
+    text-align: justify;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    opacity: 0; /* Set initial opacity to 0 */
+    transition: opacity 0.5s ease, background-color 0.5s ease; /* Added background-color transition */
+    background-color: #555; /* Dark background color */
+}
+
+.pair:hover .text {
+    color: #DDD;
+    opacity: 1; /* Fade in text on hover */
+    background-color: #0000000e; /* Dark background color on hover */
+}
+
+
+/* ... (previous styles) */
+
+.photo {
+    text-align: center;
+    padding: 10px;
+    max-width: 100%; 
+    height: auto; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added box-shadow transition */
+}
+
+.photo:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.267); /* Enhanced box-shadow on hover */
+}
+
+
+
+
+/* ... (remaining styles) */
+
+/* .pair:nth-child(odd) .photo {
+    background-color: #f0f0f0;
+} */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+
+.footer {
+	background-color: #151515;
+	padding: 80px 0;
+}
+
+.container {
+	max-width: 1170px;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+ul {
+	list-style: none;
+}
+
+.footer-col {
+	width: 25%;
+	padding: 0 15px;
+}
+
+.footer-col h4 {
+	font-size: 18px;
+	color: #FFF;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+
+.footer-col h4::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #E91E63;
+	width: 50px;
+	height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+	color: #DDD;
+	display: block;
+	font-size: 1rem;
+	font-weight: 300;
+	text-transform: capitalize;
+	text-decoration: none;
+	transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+	color: #FFF;
+	padding-left: 7px;
+}
+
+.footer-col .social-links a {
+	color: #FFF;
+	background-color: rgba(255, 255, 255, 0.2);
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	text-align: center;
+	margin: 0 10px 10px 0;
+	line-height: 40px;
+	transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+	color: #151515;
+	background-color: #FFF;
+}
+
+@media (min-width: 768px) {
+    /* For screens larger than 768px wide, display pairs side by side */
+    .pair {
+        flex-direction: row;
+        align-items: center; /* Vertically center content in pairs */
+        
+    }
+    .photo, .text {
+        flex: 1;
+    }
+
+    
+}
+
+@media (max-width: 768px) {
+    .photo{
+        padding-top: 100px;
+    }
+    .navbar {
+        flex-direction: column; /* Change to a vertical layout for small screens */
+        text-align: center;
+        
+    }
+    .navbar-logo {
+        padding: 5px 0;
+    }
+    .navbar-links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row; /* Change flex-direction to row */
+        justify-content: center; /* Center the links horizontally */
+        flex-wrap: wrap; /* Allow links to wrap to the next line if necessary */
+    }
+    .navbar a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        margin: 5px; /* Add margin to separate links */
+        font-size: 14px; /* Adjust font size */
+    }
+    .search-bar {
+        margin-top: 10px;
+    }
+    .pair {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .text {
+        margin-top: 10px; /* Add some spacing between the photo and text */
+    }
+
+
+
+
+
+    /* .photo{
+        margin-top: 40px;
+    } */
+
+    .footer-col {
+		width: 50%;
+		margin-bottom: 30px;
+	}   
+}

@@ -1,0 +1,81 @@
+<!-- cart.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title of the page -->
+    <title>Cart</title>
+    
+    <!-- Link to the external CSS file for styling -->
+    <link rel="stylesheet" href="styles/cart.css">
+    
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/3b161c540c.js" crossorigin="anonymous"></script>
+    
+    <!-- Duplicate title tag (remove one) -->
+    <title>Cart</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="navbar">
+        <!-- Library logo -->
+        <div class="navbar-logo">
+            <img src="images/logo.jpeg" alt="Library Logo">
+        </div>
+
+        <!-- Navigation links -->
+        <div class="navbar-links">
+            <a href="home.html">Home </a>
+            <a href="about_us.html">About Us</a>
+            <a href="our_books.html">Our Books</a>
+            <a href="our_services.html">Our Services</a>
+        </div>
+
+        <!-- Search bar and cart icon -->
+        <div class="search-bar">
+            <!-- Cart icon with a link to cart.html -->
+            <a href="cart.html" class="cart-icon" target="_blank"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+    </div>
+
+    <!-- Cart heading and Clear Cart button -->
+    <div class="cart-heading">
+        <h1>Your Cart</h1>
+        <button id="clear-cart">Clear Cart</button>
+    </div>
+
+    <!-- Container for displaying cart items -->
+    <div id="cart-content">
+        <!-- Display cart items here -->
+    </div>
+
+    <!-- Issue Now button -->
+    <div class="issue">
+        <button id="issue_now"> Issue Now</button>
+    </div>
+
+    <!-- Form to collect user information before issuing the book (initially hidden) -->
+    <div id="user-info-form" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="prn">PRN:</label>
+        <input type="text" id="prn" name="prn" required>
+ 
+        <!-- Button to submit user information -->
+        <button id="submit-user-info">Submit</button>
+    </div>
+
+    <!-- JavaScript script for handling cart functionality -->
+    <script defer src="cart.js"></script>
+</body>
+
+</html>

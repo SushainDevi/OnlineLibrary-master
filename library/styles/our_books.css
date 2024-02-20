@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-header {
+    text-align: center;
+    background-color: #333; /* Background color for the header */
+    padding: 10px 0;
+}
+
+.navbar-header h1 {
+    color: #fff; /* Header text color */
+    margin: 0;
+}
+
+h1{
+    color: white;
+}
+
+.navbar {
+    background-color: rgb(66, 64, 64); 
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: absolute; /* Add this to make the navbar overlay the home section */
+    width: 100%; /* Ensure the navbar spans the entire width */
+    top: 0; /* Position the navbar at the top of the viewport */
+    left: 0;
+    z-index: 1;
+}
+
+/* Style for the logo */
+.navbar-logo {
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+    padding-left: 15px;
+    
+}
+
+/* Style for the logo image */
+.navbar-logo img {
+    max-height: 60px; /* Adjust the max height for your logo */
+    max-width: 100%; /* Ensure the logo width adjusts to the available space */
+    display: block; /* Remove any extra spacing around the logo */
+}
+
+/* Style for the navigation links */
+.navbar-links {
+    display: flex;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+}
+
+/* Hover effect for navigation links */
+.navbar a:hover {
+    background-color: black;
+    border-radius: 7px;
+}
+
+/* Style for the search bar */
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+    background: #fff;
+    font-size: 14px;
+    margin-right: 10px;
+    padding-left: 25px;
+    background-image: url('search-26241.png'); /* Replace 'search-icon.png' with your search icon image */
+    background-size: 16px;
+    background-repeat: no-repeat;
+    background-position: 5px center;
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.cart-icon {
+    font-size: 24px; /* Adjust the icon size as needed */
+    color: white ; /* Icon color */
+    cursor: pointer;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(30, 28, 28);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    top: 100px;
+}
+
+.card {
+    width: calc(20% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    color: white;
+    flex-direction: column; /* Adjust to column layout */
+}
+
+.card img {
+    max-width: 100%;
+    margin-bottom: 10px; 
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Adjust the value as needed for the desired vertical translation */
+    transition: transform 0.5s ease; /* Smooth transition effect */
+    box-shadow: 0 4px 8px rgba(0, 0.4, 0.5, 0.7); /* Add a subtle box shadow on hover */
+}
+
+
+.addToCart {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: auto;
+}
+
+.addToCart:hover{
+    background-color: #102d4d;
+}
+
+
+.footer {
+    background-color: #151515;
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+    list-style: none;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    color: #FFF;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col h4::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #E91E63;
+    width: 50px;
+    height: 2px;
+}
+
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #DDD;
+    display: block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #FFF;
+    padding-left: 7px;
+}
+
+.footer-col .social-links a {
+    color: #FFF;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 10px 10px 0;
+    line-height: 40px;
+    transition: all 0.5s ease;
+}
+
+.footer-col .social-links a:hover {
+    color: #151515;
+    background-color: #FFF;
+}
+@media (max-width: 768px) {
+    .card {
+        width: calc(45% - 20px);
+
+    }
+
+    h1 {
+        text-align: center;
+        margin-top: 80%;
+        /* margin-bottom: 100px; */
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar-links {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row; /* Change flex-direction to row */
+        justify-content: center; /* Center the links horizontally */
+        flex-wrap: wrap; /* Allow links to wrap to the next line if necessary */
+    }
+
+    .navbar a {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        margin: 5px; /* Add margin to separate links */
+        font-size: 14px; /* Adjust font size */
+    }
+
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+    
+}
